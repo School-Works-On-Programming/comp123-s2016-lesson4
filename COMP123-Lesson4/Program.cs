@@ -37,47 +37,27 @@ namespace COMP123_Lesson4
          */
         public static void Main(string[] args)
         {
-            //create a new instance of the Person class
-            Person Sarah = new Person();
-            Sarah.Name = "Sarah";
-            Sarah.Age = 29;
-            Sarah.SaysHello();
-            Sarah.ShowAge();
+            // Create instance of the Student class
+            Student tommy = new Student("Tommy", 20, "300700600");
 
-            Console.WriteLine("-----------------------------");
+            tommy.Age = 20;
+            tommy.Name = "Tommy";
+            tommy.SaysHello();
 
-            Person Chris = new Person("Tom");
-            Chris.Age = 23;
-            Chris.SaysHello();
-            Chris.ShowAge();
+            Console.WriteLine();
 
-            Console.WriteLine("-----------------------------");
+            tommy.studies();
 
-            Person mark = new Person(30);
-            mark.Name = "Mark";
-            mark.SaysHello();
-            mark.ShowAge();
+            Console.WriteLine("-------------------------------------"); 
+            // Create instance of the Teacher class
+            Teacher tom = new Teacher("Tom", 50, "T12345678");
 
-            Console.WriteLine("-----------------------------");
+            tom.SaysHello();
 
-            Person Joanne = new Person("Joanne", 25);
-            Joanne.SaysHello();
-            Joanne.ShowAge();
-
-
-            Console.WriteLine("-----------------------------");
-
-            Person Jing = new Person("Jing", 35);
-            Jing.SaysHello();
-            Jing.ShowAge();
-
-
-            Console.WriteLine("-----------------------------");
-
-            Person Kent = new Person("Kent", 29);
-            Kent.SaysHello();
-            Kent.ShowAge();
-
+            Console.WriteLine();
+            tom.Teaches();
+            tom.ShowAge(); 
+             
         }
     }
 }
